@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Weather Form </title>
+	<h1>Weather Predictor</h1>
+</head>
+
+<body>
+
+	<div class="Weather Form">
+	<h2>Weather Form</h2>
+	<form action="/response">
+  
+  <div>
+    <div class="Location">
+      <label for="Location">Location:</label>
+      <input type="Location" class="form-control" id="Location" placeholder="Enter location" name="Location">
+    </div>
+<div>
+
+<div class "Air Pressure">
+	<h4>Air pressure</h4>
+	<div class ="form group">
+		<select class="Air Pressure input-sm" name="Air_pressure">
+		<option value ="greater">Air Pressure > 1000 mbar</option>
+		<option value="less">Air Pressure < 1000 mbar></option>
+		</select>
+	</div>
+</div>
+
+<div class "Humidity">
+	<h4>Humidity</h4>
+	<div class ="form group">
+		<select class="Humidity input-sm" name="humidity">
+			<option value="9">90%-99%</option>
+			<option value="8">80%-89%</option>
+			<option value="7">70%-79%</option>
+			<option value="6">60%-69%</option>
+			<option value="5">humidity < 60%</option>
+		</select>
+	</div>
+</div>
+
+
+<div>
+	<h4>Wind Patterns</h4>
+<div class ="form group">
+<select class="Humidity input-sm" name="Wind_patterns">
+	<option value="strong">Strong</option>
+	<option value="medium">Moderate</option>
+	<option value="weak">Weak</option>
+</select>
+</div>
+
+<div>
+	<div class="Temperature">
+      <label for="Temperature">Temperature:</label>
+      <input type="Temperature" class="form-control" id="Temperature" placeholder="Enter Temperature" name="Temperature">
+	</div>
+
+	<h4>Celsius vs Farenheight</h4>
+	<div class "checkbox">
+
+		<label><input type = "radio" value="Celsius" name="Temp">Celsius</label>
+		<label><input type = "radio" value="Farenheit" name="Temp">Fahrenheit</label>
+	</div>
+</div>
+
+	<button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<p>{{response}}</p>
+
+</body>
+</html>
